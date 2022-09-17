@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box; 
+}
+.wrapper {
+    background: linear-gradient(180deg, #B9E76E 0%, rgba(26, 60, 149, 0.37) 100%);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background: linear-gradient(180deg, rgba(185, 231, 110, 0.54) 0%, rgba(16, 137, 224, 0.432) 100%);
+    backdrop-filter: blur(15px);
+
+    border-radius: 28px;
+    width: 350px;
+    padding: 2rem 1.5rem;
+
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas: 
+    "display display display display"
+    "ac c perc divid"
+    "btn7 btn8 btn9 multi"
+    "btn4 btn5 btn6 minus"
+    "btn1 btn2 btn3 plus"
+    "btn0 btn0 dot equal" ;
+}
+
+.calculator div {
+    background: rgba(128, 128, 128, 0.402);
+    height: 60px;
+    filter: drop-shadow(0px 4px 4px rgba(168, 39, 39, 0.4));
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator .display {
+    grid-area: display;
+    
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
+
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Stick', sans-serif;
+    background: white;
+    border-radius: 5px;
+}
+
+.btn-ac {
+    grid-area: ac;
+}
+.btn-c {
+    grid-area: c;
+}
+.btn-perc {
+    grid-area: perc;
+}
+.btn-divid{
+    grid-area:divid
+}
+.btn-7{
+    grid-area: btn7;
+}
+.btn-8{
+    grid-area: btn8;
+}
+.btn-9 {
+    grid-area: btn9;
+}
+.btn-multi {
+    grid-area: multi;
+}
+.btn-4 {
+    grid-area: btn4;
+}
+.btn-5 {
+    grid-area: btn5;
+}
+.btn-6 {
+    grid-area: btn6;
+}
+.btn-minus {
+    grid-area: minus;
+}
+.btn-1 {
+    grid-area: btn1;
+}
+.btn-2 {
+    grid-area: btn2;
+}
+.btn-3 {
+    grid-area: btn3;
+}
+.btn-plus {
+    grid-area: plus;
+}
+.btn-0 {
+    grid-area: btn0;
+}
+.btn-dot {
+    grid-area: dot;
+}
+.btn-equal {
+    grid-area: equal;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+
+    background: linear-gradient(to right, rgb(76, 76, 210), rgb(207, 52, 207));
+    border-radius: 50%;
+
+    position: relative;
+    left: 90px;
+    top: 230px;
+
+}
+
+
